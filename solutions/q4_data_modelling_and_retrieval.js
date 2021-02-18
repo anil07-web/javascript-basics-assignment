@@ -18,6 +18,4 @@ fruitArray1.reduce((obj,item) => {
     return obj;
 }, {});
 const fruitobj=convertToobj(fruitArray,'name');
-console.log(fruitobj);
-console.log(fruitobj.apple);
-console.log(fruitobj.orange);
+

@@ -21,13 +21,13 @@ const results=()=>{
     ]
     const result=()=>
     studentsList.reduce((obj,item)=>{
-
+  
         let percenRes=item.subjects.reduce(()=>{
             return (item.subjects[0].marks+item.subjects[1].marks)/item.subjects.length;
         }, {})
-        console.log({ 'name':item.name,'percentage':percenRes});
+        return { 'name':item.name,'percentage':percenRes};
     }, {})
     const finResult=result(studentsList);
     return finResult;
-}
-results();s
+  }
+  results();
