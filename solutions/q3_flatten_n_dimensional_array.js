@@ -1,7 +1,12 @@
 /* Write a Program to Flatten a given n-dimensional array */
 
-const flatten = () => {
+const flatten = (array) => {
 	// Write your code here
+    let num=Infinity;
+	return Array.isArray(array)? num>0 ?
+	array.reduce((actual,val)=>actual.concat(Array.isArray(val)?
+	flatten(val,num-1):val),[])
+	:array.slice():null;
 };
 
 /* For example,
