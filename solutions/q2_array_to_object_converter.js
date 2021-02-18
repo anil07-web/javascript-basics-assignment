@@ -2,8 +2,8 @@
 	based on a given key */
 
 
-	const convert = (array,key) => {
-		// Write your code here
+	const convert = (array,key) => 
+	{	
 		if(!Array.isArray(array)){
 			return null;
 		}

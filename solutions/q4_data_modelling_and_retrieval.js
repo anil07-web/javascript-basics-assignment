@@ -7,10 +7,10 @@
 
 
 const fruitArray=[
-    {name:'custard',color:'yellow',price:180},
-    {name:'apple',color:'red',price:200},
-    {name:'strawberry',color:'green',price:70},
-    {name:'orange',color:'orange',price:52},
+    {name:'Grapes',color:'green',price:100},
+    {name:'Mango',color:'orange',price:250},
+    {name:'banana',color:'yellow',price:70},
+    {name:'cheery',color:'red',price:90},
 ];
 const convertToobj=(fruitArray1,keyfield)=>
 fruitArray1.reduce((obj,item) => {
@@ -18,4 +18,7 @@ fruitArray1.reduce((obj,item) => {
     return obj;
 }, {});
 const fruitobj=convertToobj(fruitArray,'name');
+console.log(fruitobj);
+console.log(fruitobj.cheery);
+console.log(fruitobj.Mango);
 
