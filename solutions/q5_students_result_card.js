@@ -25,8 +25,7 @@ const results=()=>{
         let pres=item.subjects.reduce(()=>{
             return (item.subjects[0].marks+item.subjects[1].marks)/item.subjects.length;
         }, {})
-        // console.log({ 'name':item.name,'percentage':pres});
-        return {'name':item.name,'percentage':pres};
+        console.log({ 'name':item.name,'percentage':pres});
     }, {})
     const finResult=result(studentsList);
     return finResult;
